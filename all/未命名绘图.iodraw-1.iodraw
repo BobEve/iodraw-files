@@ -1,1 +1,91 @@
-<mxfile host="Electron" modified="2026-03-02T08:18:08.715Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) iodraw/3.1.0 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" etag="eqI3aPRjwieg1FgryAjN" version="13.3.6" type="device"><diagram id="4veBEmFPE91m4LNhEKeo" name="第 1 页">ddGxDoMgEADQr2FXSNXO1talk0NnIlchQc8gjbZfXw1YS2wXcjwOjgPC8na6GN7LKwrQhEZiIuxEKE2zZB4XeDo4sKODxijhKN6gUi/wGHl9KAFDkGgRtVV9iDV2HdQ2MG4MjmHaHXVYtecN7KCqud7rTQkrnWY03bwE1ci1cpz4/lq+JvtOBskFjl/ECsJyg2hd1E456OXt1ndx+85/Vj8XM9DZHxvmYDt7ngQfxIo3</diagram></mxfile>
+<mxfile host="www.iodraw.com" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="24.7.17">
+  <diagram name="第 1 页" id="TEFAPKsKcjljEq_rTC5D">
+    <mxGraphModel dx="1018" dy="434" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-1" value="开始" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="240" y="20" width="55" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-2" value="步骤S1: 端侧CV预筛与波动熵 S 计算" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="139" y="104" width="256" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-3" value="S &gt; 阈值?" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="321" y="220" width="135" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-4" value="正常状态: 不占用带宽/本地输出" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="436" width="212" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-5" value="步骤S2: 智能截帧并构建微型证据包 MEP" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="282" y="427" width="252" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-6" value="步骤S3: 云端 Agent 结合常识库深度研判" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="306" y="561" width="204" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-7" value="步骤S4: 提取特征向量 Vcloud 并下发" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="301" y="677" width="215" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-8" value="步骤S4: 端侧进行旁路拦截与结果重写" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="282" y="793" width="252" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-9" value="结束: 系统完成自进化" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="319" y="927" width="178" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-10" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="yFx3vTDOBmUJe3FxG94f-1" target="yFx3vTDOBmUJe3FxG94f-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-11" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.77;exitY=0.99;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="yFx3vTDOBmUJe3FxG94f-2" target="yFx3vTDOBmUJe3FxG94f-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="388" y="195" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-12" value="否" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.87;entryX=0.74;entryY=0;rounded=0;" edge="1" parent="1" source="yFx3vTDOBmUJe3FxG94f-3" target="yFx3vTDOBmUJe3FxG94f-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="247" y="391" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-13" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.47;exitY=0;entryX=0.15;entryY=0.99;rounded=0;" edge="1" parent="1" source="yFx3vTDOBmUJe3FxG94f-4" target="yFx3vTDOBmUJe3FxG94f-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="111" y="391" />
+              <mxPoint x="111" y="195" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-14" value="是" style="curved=1;startArrow=none;endArrow=block;exitX=0.6;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="yFx3vTDOBmUJe3FxG94f-3" target="yFx3vTDOBmUJe3FxG94f-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="408" y="391" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-15" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="yFx3vTDOBmUJe3FxG94f-5" target="yFx3vTDOBmUJe3FxG94f-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-16" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="yFx3vTDOBmUJe3FxG94f-6" target="yFx3vTDOBmUJe3FxG94f-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-17" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="yFx3vTDOBmUJe3FxG94f-7" target="yFx3vTDOBmUJe3FxG94f-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-18" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="yFx3vTDOBmUJe3FxG94f-8" target="yFx3vTDOBmUJe3FxG94f-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
