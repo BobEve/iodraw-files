@@ -10,6 +10,9 @@
         <mxCell id="3y2txIHqPRJ7OjUccE4D-82" value="网络传输" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="1426" y="1410" width="181" height="596" as="geometry" />
         </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-83" value="端侧设备" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="460" y="880" width="440" height="1381" as="geometry" />
+        </mxCell>
         <mxCell id="3y2txIHqPRJ7OjUccE4D-84" value="实时视频流" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="587" y="895" width="140" height="49" as="geometry" />
         </mxCell>
