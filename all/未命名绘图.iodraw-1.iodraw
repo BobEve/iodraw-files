@@ -4,6 +4,130 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-100" value="端侧检测设备" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="74" y="610" width="150" height="1270" as="geometry" />
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-101" value="特征缓存库" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="448" y="610" width="150" height="1270" as="geometry" />
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-102" value="轻量级 CV 模型" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="648" y="610" width="150" height="1270" as="geometry" />
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-103" value="云端 Agent" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="848" y="610" width="150" height="1270" as="geometry" />
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-104" value="alt" style="shape=umlFrame;dashed=1;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="20" y="958" width="260" height="532" as="geometry" />
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-105" value="[相似度 &gt; 匹配阈值]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="yFx3vTDOBmUJe3FxG94f-104">
+          <mxGeometry x="30" width="230" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-106" value="[相似度 &lt;= 匹配阈值]" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="yFx3vTDOBmUJe3FxG94f-104">
+          <mxGeometry y="303" width="260" height="4" as="geometry" />
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-107" value="输出原始检测结果 (类别 A, 置信度 0.6)" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="yFx3vTDOBmUJe3FxG94f-102" target="yFx3vTDOBmUJe3FxG94f-100">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="448" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-108" value="提取中间层特征向量 V_new" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="yFx3vTDOBmUJe3FxG94f-102" target="yFx3vTDOBmUJe3FxG94f-100">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="448" y="826" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-109" value="查询 V_new 与缓存特征 V_cloud 的相似度" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="yFx3vTDOBmUJe3FxG94f-100" target="yFx3vTDOBmUJe3FxG94f-101">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="345" y="882" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-110" value="返回相似度 Score (例：0.95)" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="yFx3vTDOBmUJe3FxG94f-101" target="yFx3vTDOBmUJe3FxG94f-100">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="348" y="938" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-111" value="触发旁路拦截 (Bypass)" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="yFx3vTDOBmUJe3FxG94f-100" target="yFx3vTDOBmUJe3FxG94f-100">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="1042" />
+              <mxPoint x="200" y="1072" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-112" value="重写结果为云端规则标签 (类别 B)" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="yFx3vTDOBmUJe3FxG94f-100" target="yFx3vTDOBmUJe3FxG94f-100">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="1128" />
+              <mxPoint x="200" y="1158" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-113" value="输出最终高精度结果" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="yFx3vTDOBmUJe3FxG94f-100" target="yFx3vTDOBmUJe3FxG94f-100">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="1206" />
+              <mxPoint x="200" y="1236" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-114" value="保留模型原始输出" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="yFx3vTDOBmUJe3FxG94f-100" target="yFx3vTDOBmUJe3FxG94f-100">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="1332" />
+              <mxPoint x="200" y="1362" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-115" value="输出常规结果" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="yFx3vTDOBmUJe3FxG94f-100" target="yFx3vTDOBmUJe3FxG94f-100">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="1410" />
+              <mxPoint x="200" y="1440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-116" value="上报微型证据包 (MEP)" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="yFx3vTDOBmUJe3FxG94f-100" target="yFx3vTDOBmUJe3FxG94f-103">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="545" y="1585" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-117" value="VLM 深度研判与特征提取" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="yFx3vTDOBmUJe3FxG94f-103" target="yFx3vTDOBmUJe3FxG94f-103">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="974" y="1641" />
+              <mxPoint x="974" y="1671" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-118" value="下发新特征向量 V_cloud 与规则标签" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="yFx3vTDOBmUJe3FxG94f-103" target="yFx3vTDOBmUJe3FxG94f-100">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="548" y="1727" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-119" value="更新自适应特征缓存库" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="yFx3vTDOBmUJe3FxG94f-100" target="yFx3vTDOBmUJe3FxG94f-101">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="345" y="1775" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-120" value="正常检测阶段" style="fillColor=#ffff88;strokeColor=#9E916F;" vertex="1" parent="1">
+          <mxGeometry x="124" y="685" width="824" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="yFx3vTDOBmUJe3FxG94f-121" value="异常触发与更新阶段" style="fillColor=#ffff88;strokeColor=#9E916F;" vertex="1" parent="1">
+          <mxGeometry x="124" y="1500" width="824" height="49" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
