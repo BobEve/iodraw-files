@@ -7,9 +7,6 @@
         <mxCell id="3y2txIHqPRJ7OjUccE4D-1" value="云端调度节点 (Cloud Server)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="438" y="380" width="482" height="382" as="geometry" />
         </mxCell>
-        <mxCell id="3y2txIHqPRJ7OjUccE4D-2" value="端侧设备 (边缘摄像头)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="20" y="20" width="398" height="1025" as="geometry" />
-        </mxCell>
         <mxCell id="3y2txIHqPRJ7OjUccE4D-3" value="实时视频流捕捉模块" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="63" y="45" width="204" height="49" as="geometry" />
         </mxCell>
