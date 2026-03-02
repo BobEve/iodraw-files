@@ -16,9 +16,6 @@
         <mxCell id="3y2txIHqPRJ7OjUccE4D-5" value="波动熵计算与截帧模块&#xa;核心触发判定" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="55" y="260" width="220" height="66" as="geometry" />
         </mxCell>
-        <mxCell id="3y2txIHqPRJ7OjUccE4D-6" value="自适应特征匹配缓存库&#xa;免训练规则存储" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="163" y="816" width="220" height="66" as="geometry" />
-        </mxCell>
         <mxCell id="3y2txIHqPRJ7OjUccE4D-7" value="旁路拦截与结果输出&#xa;余弦相似度比对" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="98" y="954" width="204" height="66" as="geometry" />
         </mxCell>
@@ -79,19 +76,21 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="3y2txIHqPRJ7OjUccE4D-19" value="2. 规则热更新：下发轻量级特征" style="curved=1;startArrow=none;endArrow=block;strokeWidth=3;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="3y2txIHqPRJ7OjUccE4D-11" target="3y2txIHqPRJ7OjUccE4D-6">
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-19" value="2. 规则热更新：下发轻量级特征" style="curved=1;startArrow=none;endArrow=block;strokeWidth=3;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="3y2txIHqPRJ7OjUccE4D-11">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="678" y="762" />
               <mxPoint x="273" y="789" />
             </Array>
+            <mxPoint x="273" y="816" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3y2txIHqPRJ7OjUccE4D-20" value="同步规则" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.67;entryY=0;rounded=0;" edge="1" parent="1" source="3y2txIHqPRJ7OjUccE4D-6" target="3y2txIHqPRJ7OjUccE4D-7">
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-20" value="同步规则" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.67;entryY=0;rounded=0;" edge="1" parent="1" target="3y2txIHqPRJ7OjUccE4D-7">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="273" y="918" />
             </Array>
+            <mxPoint x="273" y="882" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="3y2txIHqPRJ7OjUccE4D-21" value="云端调度节点 (Cloud Server)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
