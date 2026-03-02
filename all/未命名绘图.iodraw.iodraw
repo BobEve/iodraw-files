@@ -4,6 +4,99 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-61" value="云端调度节点 - Cloud Server" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="824" y="690" width="670" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-62" value="端侧设备 - 边缘摄像头" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="950" width="2120" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-63" value="实时视频流捕捉" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="45" y="1028" width="142" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-64" value="轻量级CV预筛" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="237" y="1028" width="129" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-65" value="波动熵计算与截帧" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="416" y="1028" width="158" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-66" value="自适应特征缓存" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="1713" y="985" width="142" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-67" value="旁路拦截与输出" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="1973" y="1014" width="142" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-68" value="接收解析模块" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="850" y="725" width="126" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-69" value="多模态视觉Agent" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="1026" y="780" width="151" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-70" value="外部常识规则库" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="849" y="824" width="127" height="71" as="geometry" />
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-71" value="特征提取与下发" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="1327" y="780" width="142" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-72" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" edge="1" parent="1" source="3y2txIHqPRJ7OjUccE4D-63" target="3y2txIHqPRJ7OjUccE4D-64">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-73" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" edge="1" parent="1" source="3y2txIHqPRJ7OjUccE4D-64" target="3y2txIHqPRJ7OjUccE4D-65">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-74" value="同步规则" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=1;exitY=0.49;entryX=0;entryY=0.17;rounded=0;" edge="1" parent="1" source="3y2txIHqPRJ7OjUccE4D-66" target="3y2txIHqPRJ7OjUccE4D-67">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1914" y="1009" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-75" value="平时正常状态" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.63;entryX=0;entryY=0.83;rounded=0;" edge="1" parent="1" source="3y2txIHqPRJ7OjUccE4D-65" target="3y2txIHqPRJ7OjUccE4D-67">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="699" y="1068" />
+              <mxPoint x="1914" y="1068" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-76" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.49;entryX=0.21;entryY=0;rounded=0;" edge="1" parent="1" source="3y2txIHqPRJ7OjUccE4D-68" target="3y2txIHqPRJ7OjUccE4D-69">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1001" y="749" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-77" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0.21;entryY=0.99;rounded=0;" edge="1" parent="1" source="3y2txIHqPRJ7OjUccE4D-70" target="3y2txIHqPRJ7OjUccE4D-69">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1001" y="859" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-78" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.49;entryX=0;entryY=0.49;rounded=0;" edge="1" parent="1" source="3y2txIHqPRJ7OjUccE4D-69" target="3y2txIHqPRJ7OjUccE4D-71">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-79" value="1.触发预警:上报微型证据包" style="curved=1;startArrow=none;endArrow=block;strokeWidth=3;exitX=1;exitY=0.16;entryX=0.43;entryY=0.99;rounded=0;" edge="1" parent="1" source="3y2txIHqPRJ7OjUccE4D-65" target="3y2txIHqPRJ7OjUccE4D-68">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="699" y="1009" />
+              <mxPoint x="824" y="1009" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-80" value="2.规则热更新:下发特征" style="curved=1;startArrow=none;endArrow=block;strokeWidth=3;exitX=1;exitY=0.49;entryX=0;entryY=0.49;rounded=0;" edge="1" parent="1" source="3y2txIHqPRJ7OjUccE4D-71" target="3y2txIHqPRJ7OjUccE4D-66">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1494" y="804" />
+              <mxPoint x="1603" y="1009" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
