@@ -97,6 +97,99 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-21" value="云端调度节点 (Cloud Server)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="438" y="1430" width="497" height="382" as="geometry" />
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-22" value="端侧设备 (边缘摄像头)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1070" width="398" height="1025" as="geometry" />
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-23" value="实时视频流捕捉模块" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="63" y="1095" width="204" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-24" value="轻量级CV预筛模型&#xa;(输出Bbox与原始张量)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="56" y="1194" width="218" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-25" value="波动熵计算与截帧模块&#xa;(核心触发判定)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="55" y="1310" width="220" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-26" value="自适应特征匹配缓存库&#xa;(免训练规则存储)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="163" y="1866" width="220" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-27" value="旁路拦截与结果输出&#xa;(余弦相似度比对)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="98" y="2004" width="204" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-28" value="接收解析模块&#xa;(解析微型证据包)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="481" y="1460" width="184" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-29" value="多模态视觉Agent&#xa;(VLM大模型深度研判)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="581" y="1582" width="213" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-30" value="外部常识与业务规则库" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="714" y="1455" width="175" height="77" as="geometry" />
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-31" value="特征提取与下发模块&#xa;(生成高维特征与标签)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="579" y="1721" width="216" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-32" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="3y2txIHqPRJ7OjUccE4D-23" target="3y2txIHqPRJ7OjUccE4D-24">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-33" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="3y2txIHqPRJ7OjUccE4D-24" target="3y2txIHqPRJ7OjUccE4D-25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-34" value="平时正常状态" style="curved=1;startArrow=none;endArrow=block;exitX=0.41;exitY=1;entryX=0.33;entryY=0;rounded=0;" edge="1" parent="1" source="3y2txIHqPRJ7OjUccE4D-25" target="3y2txIHqPRJ7OjUccE4D-27">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="128" y="1403" />
+              <mxPoint x="128" y="1968" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-35" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0.19;entryY=0;rounded=0;" edge="1" parent="1" source="3y2txIHqPRJ7OjUccE4D-28" target="3y2txIHqPRJ7OjUccE4D-29">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="572" y="1557" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-36" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.8;entryY=0;rounded=0;" edge="1" parent="1" source="3y2txIHqPRJ7OjUccE4D-30" target="3y2txIHqPRJ7OjUccE4D-29">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="802" y="1557" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-37" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="3y2txIHqPRJ7OjUccE4D-29" target="3y2txIHqPRJ7OjUccE4D-31">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-38" value="1. 触发预警：按需上报&#xa;微型证据包(MEP)" style="curved=1;startArrow=none;endArrow=block;strokeWidth=3;exitX=0.84;exitY=1;entryX=0;entryY=0.18;rounded=0;" edge="1" parent="1" source="3y2txIHqPRJ7OjUccE4D-25" target="3y2txIHqPRJ7OjUccE4D-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="299" y="1403" />
+              <mxPoint x="299" y="1430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-39" value="2. 规则热更新：下发&#xa;轻量级特征(V_cloud)" style="curved=1;startArrow=none;endArrow=block;strokeWidth=3;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="3y2txIHqPRJ7OjUccE4D-31" target="3y2txIHqPRJ7OjUccE4D-26">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="687" y="1812" />
+              <mxPoint x="273" y="1839" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3y2txIHqPRJ7OjUccE4D-40" value="同步规则" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.67;entryY=0;rounded=0;" edge="1" parent="1" source="3y2txIHqPRJ7OjUccE4D-26" target="3y2txIHqPRJ7OjUccE4D-27">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="273" y="1968" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
